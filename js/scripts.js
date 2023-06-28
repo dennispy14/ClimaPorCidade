@@ -1,5 +1,7 @@
-const apiKey =  "a844eeb5c98602b46ec096912190ad6f"; //Key da Api que retorna o clima OpwnWeather
-const accessKeyImg = "vlFv2yabnopOF2qAL5ZUBYyb8ztSpDZm3ts0Wdl2T9U"; //Key API que retorna imagem UnSplash
+
+
+const apiKey =  process.env.WEATHER_API_KEY; //Key da Api que retorna o clima OpwnWeather
+const accessKeyImg = process.env.UNSPLASH_API_KEY; //Key API que retorna imagem UnSplash
 
 const apiCountryURL = "https://flagsapi.com/"; //Api que retorna o icone da bandeira FlagsApi
 const apiCountryURLEnd = "/flat/32.png";

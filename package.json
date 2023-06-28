@@ -1,0 +1,19 @@
+{
+  "name": "api-clima-com-java-script",
+  "version": "1.0.0",
+  "description": "Weather Finder\r O Weather Finder é um site que permite aos usuários verificar as condições climáticas de qualquer cidade. Basta digitar o nome da cidade desejada e o site irá fornecer informações precisas e atualizadas sobre o clima.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DennisPy",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.88.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "dotenv-webpack": "^8.0.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
