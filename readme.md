@@ -14,10 +14,32 @@ Exibição de informações detalhadas: Além de mostrar a temperatura atual, o 
 + FlagsApi: A FlagsApi é usada para obter a bandeira do país correspondente à cidade pesquisada. A bandeira é exibida juntamente com as informações climáticas para fornecer uma identificação visual rápida.
   
 <h4>Como executar o projeto localmente:</h4>
-  
-<p>Clone este repositório em sua máquina local.
-Certifique-se de ter as chaves de API necessárias para acessar as APIs Unsplash, Weather e FlagsApi.
-Abra o arquivo index.html em seu navegador.
-Digite o nome da cidade desejada na caixa de pesquisa e pressione Enter.
-Aguarde alguns segundos enquanto o site busca as informações do clima e exibe a imagem e a bandeira correspondentes.
-</p>
+
+## Pré-requisitos
+
+- Node.js (https://nodejs.org) instalado em sua máquina.
+- Chaves de API para acessar as APIs Unsplash e Weather.
+## Configuração das chaves de API
+
+1. Clone este repositório em sua máquina local.
+2. Crie um arquivo chamado `.env` na raiz do projeto.
+3. Abra o arquivo `.env` e insira suas chaves de API no seguinte formato:
+  UNSPLASH_API_KEY=SuaChaveUnsplashAqui
+  WEATHER_API_KEY=SuaChaveWeatherAqui
+  <p><i>Substitua "SuaChaveUnsplashAqui", "SuaChaveWeatherAqui" e "SuaChaveFlagsApiAqui" pelas suas respectivas chaves obtidas ao se registrar nas APIs correspondentes.</i><p>
+
+4. Salve o arquivo `.env`.
+
+Observação: Certifique-se de não compartilhar suas chaves de API publicamente ao fazer commit ou ao compartilhar seu código.
+
+## Como executar o projeto localmente
+
+1. Após configurar corretamente suas chaves de API no arquivo `.env`, abra o terminal na pasta raiz do projeto.
+2. Execute o seguinte comando para instalar as dependências necessárias:
+   npm install
+3. Em seguida, execute o seguinte comando para iniciar o servidor de desenvolvimento com o Webpack:
+   npm start
+4. O servidor será iniciado, e você poderá acessar o projeto em seu navegador.
+5. Digite o nome da cidade desejada na caixa de pesquisa e pressione Enter. Aguarde alguns segundos enquanto o site busca as informações do clima e exibe a imagem e a bandeira correspondentes.
+
+Observação: Se encontrar algum problema ao configurar suas chaves de API ou ao executar o projeto, verifique se o Node.js está instalado corretamente em sua máquina e se as dependências foram instaladas com sucesso usando o comando "npm install".
