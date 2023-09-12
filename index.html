@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,20 +11,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <!-- FOnt Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="dist/scriptswebpack.js" defer></script>
+    <script src="js/scripts.js" defer></script>
 </head>
+
 <body id="body">
     <div id="container" class="container">
         <div class="form">
-            <h3>Confira do clima de uma cidade:</h3>
+            <h3>Confira o clima de uma cidade:</h3>
             <div class="form-input-container">
                 <input type="text" placeholder="Digite o nome da cidade" id="city-input">
                 <button id="search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
+            </div>
+            <div id="citys" style="margin-top: 20px;padding: 5px;display: flex;justify-content: center;">
+                <div style="padding: 5px;width: 80px;text-align: center; ">
+                    <p class="city-Home">São Paulo</p>
+                    <p class="city-Home">Porto Alegre</p>
+                    <p class="city-Home">Recife</p>
+                </div>
+                <div style="width: 1px; height: 50px; background-color: white;margin: 5px;"></div>
+                <div style="padding: 5px;width: 100px; text-align: center;">
+                    <p class="city-Home">Rio de Janeiro</p>
+                    <p class="city-Home">Curitiba</p>
+                    <p class="city-Home">Salvador</p>
+                </div>
             </div>
         </div>
         <div id="weather-data" class="hide">
@@ -35,7 +52,7 @@
             <p id="temperature"><span></span>&deg;C</p>
             <div id="description-container">
                 <p id="description"></p>
-                <img src="" alt="Condições do tempo" id="weather-icon">                
+                <img src="" alt="Condições do tempo" id="weather-icon">
             </div>
             <div id="details-container">
                 <p id="humidity">
@@ -47,8 +64,9 @@
                     <span></span>
                 </p>
             </div>
-            
+
         </div>
     </div>
 </body>
+
 </html>
